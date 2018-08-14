@@ -1,0 +1,25 @@
+        -:    0:Source:test1.c
+        -:    0:Graph:test1.gcno
+        -:    0:Data:test1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:
+function main called 1 returned 100% blocks executed 71%
+        1:    3:int main(void){
+        1:    4: int cond = 1;
+        1:    5: if (cond){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:    6: printf("Condition is true... \n");
+call    0 returned 100%
+        -:    7: }
+        -:    8: else{
+    #####:    9: printf("Condition is false... \n");
+call    0 never executed
+    #####:   10: return 1;
+        -:   11: }
+        1:   12: printf("End of program \n");
+call    0 returned 100%
+        1:   13: return 0;
+        -:   14:}
